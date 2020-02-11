@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Preston Phan is a front end Web developer looking for a job please"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Preston Phan | Web Developer</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <div class="logo">
+          <img src="../icons/code.svg" alt="logo" />
+          <h1>Preston Phan</h1>
+        </div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects/">Projects</a></li>
+          <li><a class="active" href="./index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="form-section">
+      <form action="https://formspree.io/mleboodo" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="UserName" required />
+        <label for="email">Email</label>
+        <input type="text" name="email" id="UserEmail" required />
+        <label for="message">Leave a message</label>
+        <textarea
+          name="message"
+          type="text"
+          id="UserMessage"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button type="submit" id="submit">submit</button>
+      </form>
+    </section>
+    <footer>
+      <h4>Preston Phan &copy; 2020</h4>
+      <ul>
+        <li>
+          <a href="https://github.com/Preston-P"
+            ><img src="/icons/github.svg" alt="github"
+          /></a>
+          <a href="https://www.linkedin.com/in/preston-phan-3157991a1/"
+            ><img src="/icons/linked-in.svg" alt="linkedin"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCVVlJxOAkoGrEi5NhTNFH-X5nddZgRUXM",
+        authDomain: "portfolio-site-8afee.firebaseapp.com",
+        databaseURL: "https://portfolio-site-8afee.firebaseio.com",
+        projectId: "portfolio-site-8afee",
+        storageBucket: "portfolio-site-8afee.appspot.com",
+        messagingSenderId: "800352833734",
+        appId: "1:800352833734:web:513c20ba8803a84a6347c7"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.projects {
+  width: 90%;
+  display: grid;
+  grid-template-columns: (repeat 3, 1fr);
+
+  margin: auto;
+  min-height: 90vh;
+  @include flex(space-between, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+
+  h2 {
+    margin: 5rem;
+  }
+}
+
+.travelly,
+.elena {
+  flex: 1 1 40rem;
+  margin: 3rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
